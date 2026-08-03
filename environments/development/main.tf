@@ -1,9 +1,9 @@
 module vpc {
   source = "../../modules/vpc"
     vpc_cidr = "11.0.0.0/16"
-    subnet_cidr =  "11.0.1.0/24"
-    subnet_az =  "ap-south-1"
-    env = "Dev"
+    subnet_cidr = "11.0.1.0/24"
+    subnet_az = "ap-south-1"
+    env = "dev"
 }
 
 module ec2 {
@@ -12,5 +12,5 @@ module ec2 {
     ins_type = "t3.micro"
     subn_id = module.vpc.subnet_id
     ec2_count = 3
-    environment = "Dev"
+    environment = "dev"
 }
