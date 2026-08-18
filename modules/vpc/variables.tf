@@ -1,21 +1,21 @@
 variable vpc_cidr {
-  type        = string
-  description = "VPC cidr range"
-  default     = "10.0.0.0/16"
+  type = string
+  default = "10.0.0.0/16"
+  description = "vpc cidr range"
 }
 
 variable subnet_cidr {
-   type        = string
-  description = "subnet cidr"
-  default     = "10.0.1.0/24"
-} 
+    type = string
+    default = "10.0.1.0/24"
+    description = "subnet cidr"
+}
 
 variable subnet_az {
-   type        = string
-  description = "subnet az"
-} 
+  type = string
+  description = "subnet azone"
+}
 
 variable env {
   type = string
-  description = "what env it is"
+  description = "what env is it"
 }
