@@ -12,10 +12,11 @@ variable subnet_cidr {
 
 variable subnet_az {
   type = string
-  description = "subnet azone"
+  default = "ap-south-1"
+  description = "subnet availablity zone"
 }
 
 variable env {
   type = string
-  description = "what env is it"
+  description = "environment of VPC"
 }
